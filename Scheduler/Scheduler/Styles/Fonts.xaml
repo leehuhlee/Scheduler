@@ -1,0 +1,48 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:system="clr-namespace:System;assembly=mscorlib">
+
+    <Style TargetType="{x:Type Control}" x:Key="FontBaseStyle">
+        <Setter Property="FontFamily" Value="Arial"/>
+        <Setter Property="FontSize" Value="{StaticResource FontSizeMedium}"/>
+    </Style>
+
+    <Style TargetType="{x:Type Button}" x:Key="FontSmallBaseStyle">
+        <Setter Property="FontFamily" Value="Arial"/>
+        <Setter Property="FontSize" Value="{StaticResource FontSizeSmall}"/>
+    </Style>
+
+    <Style TargetType="{x:Type TextBlock}" x:Key="FontBaseTextBlockStyle">
+        <Setter Property="FontFamily" Value="Arial"/>
+        <Setter Property="FontSize" Value="{StaticResource FontSizeMedium}"/>
+    </Style>
+
+    <Style TargetType="{x:Type TextBlock}" x:Key="FontTextBlockXSmallM0Style">
+        <Setter Property="FontSize" Value="{StaticResource FontSizeXSmall}" />
+        <Setter Property="Margin" Value="0"/>
+    </Style>
+
+    <Style TargetType="{x:Type TextBlock}" x:Key="FontTextBlockXSmallMTBStyle">
+        <Setter Property="FontSize" Value="{StaticResource FontSizeXSmall}"/>
+        <Setter Property="Margin" Value="0 2 0 2"/>
+    </Style>
+
+    <Style TargetType="{x:Type TextBox}" x:Key="FontTextBoxBaseStyle">
+        <Setter Property="FontFamily" Value="Arial"/>
+        <Setter Property="FontSize" Value="{StaticResource FontSizeXSmall}"/>
+        <Setter Property="Margin" Value="0 2 0 2"/>
+    </Style>
+
+    <Style TargetType="{x:Type Button}" BasedOn="{StaticResource FontBaseStyle}"/>
+    <Style TargetType="{x:Type Label}" BasedOn="{StaticResource FontBaseStyle}"/>
+    <Style TargetType="{x:Type TextBox}" BasedOn="{StaticResource FontBaseStyle}"/>
+    <Style TargetType="{x:Type TextBlock}" BasedOn="{StaticResource FontBaseTextBlockStyle}"/>
+    <Style TargetType="{x:Type ListView}" BasedOn="{StaticResource FontBaseStyle}"/>
+
+    <system:Double x:Key="FontSize2XSmall">9</system:Double>
+    <system:Double x:Key="FontSizeXSmall">12</system:Double>
+    <system:Double x:Key="FontSizeSmall">14</system:Double>
+    <system:Double x:Key="FontSizeMedium">20</system:Double>
+    <system:Double x:Key="FontSizeLarge">30</system:Double>
+
+</ResourceDictionary>
